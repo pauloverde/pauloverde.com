@@ -121,10 +121,12 @@ a:hover, a:active {
 		max-width: 240px;
 	}
 	h1 {
-		font-size:36px;
+		font-size: 36px;
 	}
 	#nav li {
 		display:block;
+		font-size: 24px;
+		padding: 3px 0 3px 0;
 	}
 	#nav li ~ li::before {
 		content: '';
