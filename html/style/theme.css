@@ -27,7 +27,7 @@ body, html {
 #header {
 	padding:15px 10px 5px 45px;
 	
-	background:url('http://www.pauloverde.com/images/logo.png') left top no-repeat;
+	background:url('http://www.pauloverde.com/images/logo.png') left center no-repeat;
 }
 #nav {
 	padding:5px 10px;
@@ -43,6 +43,9 @@ body, html {
 	display:inline;
 	margin:0;
 	padding:0;
+}
+#nav li ~ li::before {
+	content: '| ';
 }
 #main {
 	float:right;
@@ -100,4 +103,28 @@ a:link, a:visited {
 }
 a:hover, a:active {
 	color:lightgreen;
+}
+@media only screen and (max-device-width: 800px), only screen and (max-width: 800px) {
+	#wrap {
+		width:98%;
+		border:1% green solid;
+	}
+	#main {
+		width:96%;
+		padding:2%;
+	}
+}
+@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+	#card {
+		width: 50%;
+	}
+	h1 {
+		font-size:36px;
+	}
+	#nav li {
+		display:block;
+	}
+	#nav li ~ li::before {
+		content: '';
+	}
 }
