@@ -26,6 +26,7 @@ body, html {
 }
 #header {
 	padding:15px 10px 5px 45px;
+	min-height: 64px;
 	
 	background:url('http://www.pauloverde.com/images/logo.png') left center no-repeat;
 }
@@ -117,6 +118,7 @@ a:hover, a:active {
 @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
 	#card {
 		width: 50%;
+		max-width: 240px;
 	}
 	h1 {
 		font-size:36px;
