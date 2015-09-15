@@ -132,4 +132,10 @@ a:hover, a:active {
 	#nav li ~ li::before {
 		content:'';
 	}
+	#nav li ~ li {
+		border-top:1px solid green;
+	}
+	#nav a {
+		text-decoration:none;
+	}
 }
