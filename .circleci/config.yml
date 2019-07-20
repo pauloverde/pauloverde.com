@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  site-build:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
+      - run:
+          name: Build site
+          command: npm run build
+workflows:
+  version: 2
+  build:
+    jobs:
+      - site-build
