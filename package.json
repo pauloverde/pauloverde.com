@@ -8,9 +8,11 @@
   },
   "homepage": "https://pauloverde.com",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "deploy": "gh-pages --message \"[skip ci] Updates\" -d dist"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-minify-css": "^1.2.1",
