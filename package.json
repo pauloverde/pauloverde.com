@@ -9,7 +9,7 @@
   "homepage": "https://pauloverde.com",
   "scripts": {
     "build": "gulp",
-    "deploy": "gh-pages --message \"[skip ci] Updates\" -d dist"
+    "deploy": "NODE_DEBUG=gh-pages gh-pages --message \"[skip ci] Updates\" -d dist"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
