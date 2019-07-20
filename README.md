@@ -1,2 +1,2 @@
 # pauloverde.com
-The website for www.pauloverde.com
+The website for Paulo Verde Technologies

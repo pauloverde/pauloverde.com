@@ -1,17 +1,11 @@
 {
   "name": "pauloverde.com",
   "version": "1.0.0",
-  "description": "The website for www.pauloverde.com",
+  "description": "The website for pauloverde.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pauloverde/pauloverde.com.git"
+    "url": "git@github.com:pauloverde/pauloverde.com.git"
   },
-  "contributors": [
-    {
-      "name": "Jason Paulos",
-      "email": "jason@pauloverde.com"
-    }
-  ],
   "homepage": "https://pauloverde.com",
   "scripts": {
     "build": "gulp"
