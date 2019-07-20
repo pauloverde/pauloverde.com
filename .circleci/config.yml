@@ -19,14 +19,14 @@ jobs:
       - image: circleci/node:10
     steps:
       - checkout
-      - attach_workspace:
-          at: dist
       - run:
           name: Install and configure dependencies
           command: |
             npm install
             git config user.email "ci-build@pauloverde.com"
             git config user.name "ci-build"
+      - attach_workspace:
+          at: .
       - add_ssh_keys:
           fingerprints:
             - "52:d4:28:02:3f:c3:ac:c5:ea:0c:01:44:b8:fa:bc:69"
